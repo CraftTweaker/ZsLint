@@ -2,11 +2,15 @@
     "name": "zslint",
     "displayName": "zslint",
     "description": "Syntax checking for ZS",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "BloodWorkXGaming",
     "repository": {
         "type": "git",
         "url": "https://github.com/CraftTweaker/ZsLint"
+    },
+    "icon": "assets/zslint_logo.png",
+    "galleryBanner": {
+        "color": "#D3D3D3"
     },
     "engines": {
         "vscode": "^1.23.0"
