@@ -18,7 +18,7 @@ export default class LintingProvider {
         this.diagnosticCollection = vscode.languages.createDiagnosticCollection();
 
         let disp: Disposable[] = [];
-
+        // vscode.workspace.onDidChangeTextDocument((event: vscode.TextDocumentChangeEvent) => this.doZSLint(event.document), this, disp);
         vscode.workspace.onDidSaveTextDocument(this.doZSLint, this, disp);
 
         this._disposable = Disposable.from(...disp);
@@ -39,7 +39,7 @@ export default class LintingProvider {
             return;
         }
 
-        if (this.socket.CLOSED === this.socket.readyState) {
+        if (this.socket.OPEN !== this.socket.readyState) {
             console.log("Socket is closed, trying to open new one.");
             this.socket = new WebSocket("ws://127.0.0.1:24532", "zslint");
 
