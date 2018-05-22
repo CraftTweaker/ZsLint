@@ -51,11 +51,6 @@
             "language": "zenscript",
             "scopeName": "source.zenscript",
             "path": "./syntaxes/zenscript.tmLanguage.json"
-        }],
-        "themes": [{
-            "label": "ZenScript",
-            "uiTheme": "vs-dark",
-            "path": "./themes/ZenScript-color-theme.json"
         }]
     },
     "dependencies": {

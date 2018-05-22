@@ -1,8 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "ZenScript",
-	"patterns": [
-				{
+	"patterns": [{
 			"include": "#blockcomment"
 		},
 		{
@@ -22,7 +21,7 @@
 		},
 		{
 			"include": "#doublestrings"
-		}		
+		}
 	],
 	"repository": {
 		"keywords": {
@@ -78,7 +77,7 @@
 			"end": ">",
 			"patterns": [{
 				"name": "variable.parameter.brackethandler.zenscript",
-				"match": "[^>]*?:"
+				"match": "(?<=\\<)(.*?)(?=\\:)"
 			}]
 		},
 		"blockcomment": {
