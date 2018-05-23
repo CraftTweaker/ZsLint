@@ -2,7 +2,7 @@
     "name": "zslint",
     "displayName": "zslint",
     "description": "Syntax checking for ZS",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "BloodWorkXGaming",
     "repository": {
         "type": "git",
@@ -36,22 +36,26 @@
         "test": "yarn run compile && node ./node_modules/vscode/bin/test"
     },
     "contributes": {
-        "languages": [{
-            "id": "zenscript",
-            "aliases": [
-                "ZenScript",
-                "zenscript"
-            ],
-            "extensions": [
-                ".zs"
-            ],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "zenscript",
-            "scopeName": "source.zenscript",
-            "path": "./syntaxes/zenscript.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "zenscript",
+                "aliases": [
+                    "ZenScript",
+                    "zenscript"
+                ],
+                "extensions": [
+                    ".zs"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "zenscript",
+                "scopeName": "source.zenscript",
+                "path": "./syntaxes/zenscript.tmLanguage.json"
+            }
+        ]
     },
     "dependencies": {
         "@types/ws": "^5.1.1",
