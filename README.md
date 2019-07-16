@@ -1,5 +1,7 @@
 # ZSLint
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/CraftTweaker/ZsLint.svg)](https://greenkeeper.io/)
+
 With ZsLint you can lint your CraftTweaker scripts.  
 For this to work you need a cutting edge version (at this point unreleased) of CraftTweaker.
 
