@@ -19,9 +19,9 @@
         "Linters"
     ],
     "devDependencies": {
-        "@types/node": "^7.0.43",
+        "@types/node": "^12.6.5",
         "tslint": "^5.8.0",
-        "typescript": "^2.6.1",
+        "typescript": "^3.5.3",
         "vscode": "^1.1.6"
     },
     "activationEvents": [
@@ -58,8 +58,8 @@
         ]
     },
     "dependencies": {
-        "@types/ws": "^5.1.1",
+        "@types/ws": "^6.0.1",
         "npm": "^6.0.1",
-        "ws": "^5.1.1"
+        "ws": "^7.1.0"
     }
 }
