@@ -1,3 +1,7 @@
+# Archived.
+
+This project is currently not in use and does not currently work.
+
 # ZSLint
 
 With ZsLint you can lint your CraftTweaker scripts.  
